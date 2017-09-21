@@ -500,6 +500,7 @@ function br_rc_post_filter( $type='vertical' ) {
 
 		$br_rc_terms_array[ $br_rc_taxonomy_item->label ] = get_terms( array( 
 															'taxonomy' => $br_rc_taxonomy_item->name,
+															'hide_empty' => false,
 														) );
 	endforeach;
 	
