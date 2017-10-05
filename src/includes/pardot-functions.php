@@ -730,27 +730,31 @@ function br_rc_pardot_score_update() {
             // Create a temporary array containing current posts terms
             // Loop through returned objects and push slug onto prepped array
             $temp_terms_array = get_the_terms( $post_id, $name );
-            foreach ( $temp_terms_array as $term_object ) :
 
-                // Check if Pardot tracking has been disabled for this term
-                $term_id         = $term_object->term_id;
-                $term_options    = get_option( "taxonomy_$term_id" );
-                $pardot_tracking = isset( $term_options[ 'pardot_tracking' ] ) 
-                                   ? $term_options[ 'pardot_tracking' ]
-                                   : true; // default set to true
+            // Check if returned array exists
+            if ( is_array( $temp_terms_array ) ) :
+                foreach ( $temp_terms_array as $term_object ) :
 
-                // If term is tracked, add it to array
-                if ( $pardot_tracking ) :
+                    // Check if Pardot tracking has been disabled for this term
+                    $term_id         = $term_object->term_id;
+                    $term_options    = get_option( "taxonomy_$term_id" );
+                    $pardot_tracking = isset( $term_options[ 'pardot_tracking' ] ) 
+                                       ? $term_options[ 'pardot_tracking' ]
+                                       : true; // default set to true
 
-                    $resource_post_terms_array[] = preg_replace( '/-/', 
-                                                                 '_', 
-                                                                 $term_object->slug . '_score' ) ;
+                    // If term is tracked, add it to array
+                    if ( $pardot_tracking ) :
 
-                // Else, cycle through next iteration
-                else:
-                    continue;
-                endif;
-            endforeach;
+                        $resource_post_terms_array[] = preg_replace( '/-/', 
+                                                                     '_', 
+                                                                     $term_object->slug . '_score' ) ;
+
+                    // Else, cycle through next iteration
+                    else:
+                        continue;
+                    endif;
+                endforeach;
+            endif;
         endforeach;
 
         // Update data setup
