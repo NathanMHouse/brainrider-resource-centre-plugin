@@ -1056,10 +1056,10 @@ function br_rc_pardot_form_selection_output( $post ) {
         if ( $plugin_settings['br_rc_pardot_https_toggle'] ) :
 
             // Perform preg_replace to alter domain from vanity URL
-            $pardot_form_url = preg_replace( 
-                                    '/https?:\/\/.+\.com/', 
-                                    'https://go.pardot.com', 
-                                    $pardot_form_url 
+            $pardot_form_url = preg_replace(
+                                    '/https?:\\/\\/.+?\\//',
+                                    'https://go.pardot.com/',
+                                    $pardot_form_url
                                 );
         endif;
 
