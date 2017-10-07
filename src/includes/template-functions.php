@@ -33,8 +33,8 @@
  * Checks to see if is br_resource post type and if true, filters archive 
  * template and returns custom layout.
  *
- * @param   array	$archive_template 	Template file for archive
- * @return  type    $archive_template 	Filtered template file for archive
+ * @param   string  $archive_template   Template file for archive
+ * @return  string  $archive_template   Filtered template file for archive
 **/
 function br_rc_archive_template( $archive_template ) {
 
