@@ -1194,6 +1194,7 @@ function br_rc_settings_init() {
                                 'type'          => 'toggle',
                                 'options'       => array(),
                                 'section'       => 'br-rc-banner-settings',
+                                'hidden'        => false,
                             ),
         'br_rc_banner_title' => array(
                                 'id'            => 'br-rc-banner-title',
@@ -1203,6 +1204,7 @@ function br_rc_settings_init() {
                                 'type'          => 'text',
                                 'options'       => array(),
                                 'section'       => 'br-rc-banner-settings',
+                                'hidden'        => false,
                             ),
         'br_rc_banner_description' => array(
                                 'id'            => 'br-rc-banner-description',
@@ -1212,6 +1214,7 @@ function br_rc_settings_init() {
                                 'type'          => 'textarea',
                                 'options'       => array(),
                                 'section'       => 'br-rc-banner-settings',
+                                'hidden'        => false,
                             ),
         'br_rc_banner_image_url' => array(
                                 'id'            => 'br-rc-banner-image-url',
@@ -1221,6 +1224,7 @@ function br_rc_settings_init() {
                                 'type'          => 'image',
                                 'options'       => array(),
                                 'section'       => 'br-rc-banner-settings',
+                                'hidden'        => false,
                             ),
 
         // Filter
@@ -1232,6 +1236,7 @@ function br_rc_settings_init() {
                                 'type'          => 'text',
                                 'options'       => array(),
                                 'section'       => 'br-rc-filter-settings',
+                                'hidden'        => false,
                             ),
         'br_rc_filter_cta'  => array(
                                 'id'            => 'br-rc-filter-cta',
@@ -1240,6 +1245,7 @@ function br_rc_settings_init() {
                                 'type'          => 'text',
                                 'options'       => array(),
                                 'section'       => 'br-rc-filter-settings',
+                                'hidden'        => false,
                             ),
         'br_rc_filter_type' => array(
                                 'id'            => 'br-rc-filter-type',
@@ -1254,6 +1260,7 @@ function br_rc_settings_init() {
                                                             'brainrider-resource-centre' ),
                                                 ),
                                 'section'       => 'br-rc-filter-settings',
+                                'hidden'        => false,
                             ),
         'br_rc_filter_search_toggle' => array(
                                 'id'            => 'br-rc-filter-search-toggle',
@@ -1263,6 +1270,7 @@ function br_rc_settings_init() {
                                 'type'          => 'toggle',
                                 'options'       => array(),
                                 'section'       => 'br-rc-filter-settings',
+                                'hidden'        => false,
                             ),
 
         // Layout
@@ -1279,6 +1287,7 @@ function br_rc_settings_init() {
                                                             'brainrider-resource-centre' ),
                                                 ),
                                 'section'       => 'br-rc-layout-settings',
+                                'hidden'        => false,
                             ), 
 
         // Related Posts
@@ -1290,6 +1299,7 @@ function br_rc_settings_init() {
                                 'type'          => 'text',
                                 'options'       => array(),
                                 'section'       => 'br-rc-related-posts-settings',
+                                'hidden'        => false,
                             ),
         'br_rc_related_posts_description' => array(
                                 'id'            => 'br-rc-related-posts-description',
@@ -1299,6 +1309,7 @@ function br_rc_settings_init() {
                                 'type'          => 'textarea',
                                 'options'       => array(),
                                 'section'       => 'br-rc-related-posts-settings',
+                                'hidden'        => false,
                             ),
 
         // Pardot Settings
@@ -1310,6 +1321,7 @@ function br_rc_settings_init() {
                                 'type'          => 'email',
                                 'options'       => array(),
                                 'section'       => 'br-rc-pardot-settings',
+                                'hidden'        => false,
                             ),
         'br_rc_pardot_password' => array(
                                 'id'            => 'br-rc-pardot-password',
@@ -1319,6 +1331,7 @@ function br_rc_settings_init() {
                                 'type'          => 'password',
                                 'options'       => array(),
                                 'section'       => 'br-rc-pardot-settings',
+                                'hidden'        => false,
                             ),
         'br_rc_pardot_user_key' => array(
                                 'id'            => 'br-rc-pardot-user-key',
@@ -1328,6 +1341,7 @@ function br_rc_settings_init() {
                                 'type'          => 'text',
                                 'options'       => array(),
                                 'section'       => 'br-rc-pardot-settings',
+                                'hidden'        => false,
                             ),
         'br_rc_pardot_account_id' => array(
                                 'id'            => 'br-rc-pardot-account-id',
@@ -1337,6 +1351,7 @@ function br_rc_settings_init() {
                                 'type'          => 'text',
                                 'options'       => array(),
                                 'section'       => 'br-rc-pardot-settings',
+                                'hidden'        => false,
                             ),
         'br_rc_pardot_https_toggle' => array(
                                 'id'            => 'br-rc-pardot-https-toggle',
@@ -1346,6 +1361,7 @@ function br_rc_settings_init() {
                                 'type'          => 'toggle',
                                 'options'       => array(),
                                 'section'       => 'br-rc-pardot-settings',
+                                'hidden'        => false,
             ),
         'br_rc_pardot_score_increment' => array(
                                 'id'            => 'br-rc-pardot-score-increment',
@@ -1355,6 +1371,7 @@ function br_rc_settings_init() {
                                 'type'          => 'text',
                                 'options'       => array(),
                                 'section'       => 'br-rc-pardot-settings',
+                                'hidden'        => false,
                             ), 
 
         // Advanced Settings
@@ -1366,6 +1383,7 @@ function br_rc_settings_init() {
                                 'type'          => 'toggle',
                                 'options'       => array(),
                                 'section'       => 'br-rc-advanced-settings',
+                                'hidden'        => false,
                             ),
         'br_rc_grid_toggle' => array(
                                 'id'            => 'br-rc-grid-toggle',
@@ -1375,6 +1393,7 @@ function br_rc_settings_init() {
                                 'type'          => 'toggle',
                                 'options'       => array(),
                                 'section'       => 'br-rc-advanced-settings',
+                                'hidden'        => false,
                             ),
         'br_rc_font_toggle' => array(
                                 'id'            => 'br-rc-font-toggle',
@@ -1384,6 +1403,7 @@ function br_rc_settings_init() {
                                 'type'          => 'toggle',
                                 'options'       => array(),
                                 'section'       => 'br-rc-advanced-settings',
+                                'hidden'        => false,
                             ),
                         ); 
 
@@ -1393,6 +1413,9 @@ function br_rc_settings_init() {
     // Establish the fields (according to above array)
     foreach ( $fields_array as $fields_array_item => $value ) :
 
+        // Set value of encompassing tr class dependent upon fields hidden value
+        $class = ( $value['hidden'] ) ? 'hidden' : '';
+
         // Set up $args to pass to callback function
         $args = array( 
             'id'            => $value['id'],
@@ -1401,6 +1424,8 @@ function br_rc_settings_init() {
             'type'          => $value['type'],
             'options'       => $value['options'],
             'section'       => $value['section'],
+            'label_for'     => $value['id'],
+            'class'         => $class,
         );
 
         add_settings_field(
