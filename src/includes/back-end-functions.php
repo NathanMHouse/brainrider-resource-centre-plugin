@@ -1792,16 +1792,18 @@ function br_rc_enqueue() {
 
     // Plugin-specific styles
     if ( $css_toggle == '1' ) :
-        wp_enqueue_style( 'br_rc_stylesheet', 
-                          plugins_url( 'brainrider-resource-centre/assets/css/br-rc-stylesheet.css',
+        wp_register_style( 'br_rc_fe_stylesheet', 
+                          plugins_url( 'brainrider-resource-centre/assets/css/br-rc-fe-stylesheet.css',
                                        'brainrider-resource-centre' ) );
+        wp_enqueue_style( 'br_rc_fe_stylesheet' );
     endif;
 
     // Bootstrap grid styles
     if ( $grid_toggle == '1' ) :
-        wp_enqueue_style( 'br_rc_boostrap_stylesheet', 
+        wp_register_style( 'br_rc_boostrap_stylesheet', 
                           plugins_url( 'brainrider-resource-centre/assets/css/br-rc-bootstrap-stylesheet.min.css',
                                        'brainrider-resource-centre' ) );
+        wp_enqueue_style( 'br_rc_boostrap_stylesheet' );
     endif;
 
     // Google font styles
@@ -1812,6 +1814,12 @@ function br_rc_enqueue() {
                            null );
         wp_enqueue_style( 'br_rc_google_fonts' );
     endif;
+
+    // Back-end styles
+    wp_register_style( 'br_rc_be_stylesheet', 
+                          plugins_url( 'brainrider-resource-centre/assets/css/br-rc-be-stylesheet.css',
+                                       'brainrider-resource-centre' ) );
+    wp_enqueue_style( 'br_rc_be_stylesheet' );
 
     // Font Awesome font styles
     wp_register_style( 'br_rc_font_awesome',

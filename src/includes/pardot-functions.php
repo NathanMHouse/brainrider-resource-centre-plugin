@@ -1204,7 +1204,7 @@ function br_rc_pardot_form_stat_output( $post ) {
 **/
 function br_rc_add_editor_styles() {
     add_editor_style( plugins_url( 
-        'brainrider-resource-centre/assets/css/br-rc-stylesheet.css', 
+        'brainrider-resource-centre/assets/css/br-rc-be-stylesheet.css', 
         'brainrider-resource-centre' 
     ) );
 }
