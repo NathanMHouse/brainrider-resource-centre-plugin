@@ -1286,8 +1286,8 @@ function br_rc_pardot_custom_redirect_selection_output( $post ) {
 
                 // Perform preg_replace to alter domain from vanity URL
                 $pardot_custom_redirect_array_item['url'] = preg_replace( 
-                                                        '/https?:\/\/.+\.com/', 
-                                                        'https://go.pardot.com', 
+                                                        '/https?:\\/\\/.+?\\//', 
+                                                        'https://go.pardot.com/', 
                                                         $pardot_custom_redirect_array_item['url'] 
                                                         );
             endif;
