@@ -499,7 +499,7 @@ function br_rc_post_filter( $type='vertical' ) {
 	foreach ( $br_rc_taxonomies as $br_rc_taxonomy_item ) :
 
 		$br_rc_terms_array[ $br_rc_taxonomy_item->label ] = get_terms( array( 
-															'taxonomy' => $br_rc_taxonomy_item->name,
+															'taxonomy'   => $br_rc_taxonomy_item->name,
 															'hide_empty' => false,
 														) );
 	endforeach;
@@ -767,6 +767,7 @@ function br_rc_no_results_terms() {
 	$output  = '<h2>';
 	$output .= __( 'Sorry, No Content Found For:', 'brainrider-resource-centre' );
 	$output .= '</h2>';
+	$output .= '<div class="br-rc-searched-terms-terms">';
 
 	// Search query button/form
 	if ( $search_term ) :
@@ -843,6 +844,7 @@ function br_rc_no_results_terms() {
 		$output .= '</form>';
 	endforeach;
 
+	$output .= '</div>';
 	$output .= '<h3>';
 	$output .= __( 'Try removing a filter or taking a look at some of our more
 					recent resources below.','brainrider-resource-centre' );
