@@ -34,6 +34,12 @@
 **/
 function br_rc_start_session() {
     if ( !session_id() ) :
+
+    	// Disble cache to prevent form resubmission error
+    	header( 'Cache-Control: no-cache' );
+    	session_cache_limiter( 'private_no_expire' );
+
+    	// Start the session
         session_start();
     endif;
 }
