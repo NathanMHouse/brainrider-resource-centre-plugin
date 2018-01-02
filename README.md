@@ -22,7 +22,7 @@ Activate the plugin.
 
 Plugin activation will create an additional menu item/icon in your WordPress dashboard (i.e. 'resources'). By clicking on this menu item, you can visit the plugin setting's page and begin customization.
 
-Pardot integration requires an active account with Saleforce's (Pardot Marketing Automation Solution)[https://www.pardot.com/]. Specifically, you will need your Pardot account email, password, and user API key.
+Pardot integration requires an active account with Saleforce's [Pardot Marketing Automation Solution](https://www.pardot.com/). Specifically, you will need your Pardot account email, password, and user API key.
 
 Finally, the plugin has been built to be extensible, using WordPress's existing templating functions to allow for customization of the front-end. Better documentation (i.e. repo wiki) is on the roadmap but in the interm, available filters and actions can be discovered by inspecting the core plugin files.
 
@@ -50,4 +50,4 @@ Finally, the plugin has been built to be extensible, using WordPress's existing 
 
 ## Acknowledgments
 
-** Catia Rocha - strategy and planning
+* Catia Rocha - strategy and planning
