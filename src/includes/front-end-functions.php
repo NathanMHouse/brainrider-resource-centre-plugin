@@ -33,6 +33,10 @@
  *
 **/
 function br_rc_start_session() {
+    if ( defined( 'PANTHEON_SESSIONS_ENABLED' ) ) :
+        return;
+    endif;
+
     if ( !session_id() ) :
 
     	// Disble cache to prevent form resubmission error
